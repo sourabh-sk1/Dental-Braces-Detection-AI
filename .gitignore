@@ -1,0 +1,33 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.so
+
+# System & OS
+.DS_Store
+.idea/
+.vscode/
+
+# Logs & cache
+*.log
+streamlit.log
+labels.cache
+
+# Training output runs (keep tracked best.pt in teeth-braces-ai/)
+runs/
+braces_dataset_fixed_yolov8/runs/
+!teeth-braces-ai/best.pt
+
+# Dataset directories (too large for git)
+braces_dataset_fixed_yolov8/train/
+braces_dataset_fixed_yolov8/valid/
+braces_dataset_fixed_yolov8/test/
+braces_dataset_fixed_yolov8/*.log
+
+# Evaluation outputs
+confusion_matrix.png
+metrics.png
+evaluation_report.csv
